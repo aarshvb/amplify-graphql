@@ -7,11 +7,11 @@ import { listTodos } from './graphql/queries'
 import awsExports from "./aws-exports";
 import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports' ;
-
+Amplify.configure(awsExports);
 
 const initialState = { name: '', description: '' }
 
-const App = () => {
+const CApp = () => {
   const [formState, setFormState] = useState(initialState)
   const [todos, setTodos] = useState([])
 
@@ -80,4 +80,4 @@ const styles = {
   button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' }
 }
 
-export default App
+export default CApp

@@ -7,7 +7,7 @@ import { listTodos } from './graphql/queries'
 import awsExports from "./aws-exports";
 import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports' ;
-Amplify.configure(awsExports);
+
 
 const initialState = { name: '', description: '' }
 
